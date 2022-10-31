@@ -27,10 +27,15 @@ Follow the instructions mentioned below:
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Template Names
 
-Explain how to run the automated tests for this system
+There are 3 type of template names
 
+### 1. For low-end machines
+```
+a. redux-vite
+b. redux-ts-vite (work in progress)
+```
 ### Break down into end to end tests
 
 Explain what these tests test and why
