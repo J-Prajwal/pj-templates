@@ -33,8 +33,23 @@ There are 3 type of template names
 
 ### 1. For low-end machines
 ```
-a. redux-vite
-b. redux-ts-vite (work in progress)
+a. redux-chakra-vite
+b. redux-vite (work in progress)
+c. redux-ts-vite (work in progress)
+d. mern-chakra-vite
+e. mern-vite (work in progress)
+f. mern-ts-vite (work in progress)
+```
+
+### 2. For high-end machines
+```
+a. redux-cra (work in progress)
+b. mern-cra (work in progress)
+c. mern-ts-cra (work in progress)
+```
+### 3. For all machines
+```
+a. express-server
 ```
 ### Break down into end to end tests
 
