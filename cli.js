@@ -5,13 +5,54 @@ const fse = require("fs-extra");
 
 const destination = process.cwd();
 switch (template) {
-  case "react-redux-vite": {
-    fse.copy(`${__dirname}/templates/vite-react-chakra`, destination, (err) => {
-      if (err) throw err;
-      console.log("Copied!");
-    });
+  case "redux-chakra-vite": {
+    try {
+      fse.copy(
+        `${__dirname}/templates/vite-react-chakra`,
+        destination,
+        (err) => {
+          if (err) throw err;
+        }
+      );
+      console.log("Adding template to destination...\n\n");
+    } catch (err) {
+      console.log(err);
+    }
+    console.log(
+      "Your template has been successfully added! \n\nFollow the steps below to get started: \n1. npm install \n2. npm start\n\n"
+    );
+  }
+  case "express-server": {
+    try {
+      fse.copy(`${__dirname}/templates/express-server`, destination, (err) => {
+        if (err) throw err;
+      });
+      console.log("Adding template to destination...\n\n");
+    } catch (err) {
+      console.log(err);
+    }
+    console.log(
+      "Your template has been successfully added! \n\nFollow the steps below to get started: \n1. npm install \n2. npm start\n\n"
+    );
+  }
+  case "mern-chakra-vite": {
+    try {
+      fse.copy(
+        `${__dirname}/templates/mern-template-with-vite-react-redux`,
+        destination,
+        (err) => {
+          if (err) throw err;
+        }
+      );
+      console.log("Adding template to destination...\n\n");
+    } catch (err) {
+      console.log(err);
+    }
+    console.log(
+      "Your template has been successfully added! \n\nFollow the steps below to get started: \n1. cd client \n2. npm install \n3. npm run start \n4. cd .. \n5. cd server \n6. npm install\n7. npm run start\n\n"
+    );
   }
   default: {
-    console.log("working");
+    console.log("Happy Coding!");
   }
 }
