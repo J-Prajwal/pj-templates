@@ -31,7 +31,7 @@ switch (template) {
       console.log("Adding template to destination...\n\n");
     } catch (err) {
       console.log(err);
-    }
+    }x
     console.log(
       "Your template has been successfully added! \n\nFollow the steps below to get started: \n1. npm install \n2. npm start\n\n"
     );
