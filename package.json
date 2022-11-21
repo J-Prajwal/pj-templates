@@ -1,6 +1,6 @@
 {
-  "name": "mern-template",
-  "version": "1.0.6",
+  "name": "pj-templates",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "mern-template": "cli.js"
+    "code-template": "cli.js"
   },
   "dependencies": {
     "fs-extra": "^10.1.0"
   }
 }
+

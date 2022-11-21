@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // never remove the above line
+
 const template = process.argv[2];
 const fse = require("fs-extra");
 
@@ -8,7 +9,7 @@ switch (template) {
   case "redux-chakra-vite": {
     try {
       fse.copy(
-        `${__dirname}/templates/vite-react-chakra`,
+        `${__dirname}/templates/redux-chakra-vite`,
         destination,
         (err) => {
           if (err) throw err;
@@ -40,7 +41,25 @@ switch (template) {
   case "mern-chakra-vite": {
     try {
       fse.copy(
-        `${__dirname}/templates/mern-template-with-vite-react-redux`,
+        `${__dirname}/templates/mern-chakra-vite`,
+        destination,
+        (err) => {
+          if (err) throw err;
+        }
+      );
+      console.log("Adding template to destination...\n\n");
+    } catch (err) {
+      console.log(err);
+    }
+    console.log(
+      "Your template has been successfully added! \n\nFollow the steps below to get started: \n1. cd client \n2. npm install \n3. npm run start \n4. cd .. \n5. cd server \n6. npm install\n7. npm run start\n\n"
+    );
+    break;
+  }
+  case "redux-cra": {
+    try {
+      fse.copy(
+        `${__dirname}/templates/redux-cra`,
         destination,
         (err) => {
           if (err) throw err;
