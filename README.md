@@ -43,7 +43,7 @@ f. mern-ts-vite (work in progress)
 
 ### 2. For high-end machines
 ```
-a. redux-cra (work in progress)
+a. redux-cra
 b. mern-cra (work in progress)
 c. mern-ts-cra (work in progress)
 ```
