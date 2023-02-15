@@ -22,7 +22,7 @@ Follow the instructions mentioned below:
 
 ```
 1. npm install pj-templates -g
-2. code-templates <template-name> <your-app-name>
+2. code-template <template-name> <your-app-name>
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
